@@ -1,0 +1,75 @@
+.filters {
+    background-color: green;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #006699;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .products > .popover {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .products > ul >li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .products:hover .popover {
+    display: block;
+    margin-left: -80px;
+  }
+  .filters > div {
+    height: 100%;
+    width: 25%;
+  }
+  
+  .filters > div > h3 {
+    margin-left: 10px;
+  }
+  
+  .filters > div > h4 {
+    margin-left: 50px;
+  }
+  
+  .filters div:first-child {
+    border-right: solid #DDDDDD 1px;
+  }
+  
+  .popover {
+    background-color: #FAFAFA;
+    width: 18%;
+    height: auto;
+    position: absolute;
+    border: 1px solid #DDDDDD;
+    display: none;
+  }
+  
+  .popover > ul, li {
+    list-style-type: none;
+  }
+  
+  .services > .popover {
+      padding-bottom: 30px;
+      padding-top: 10px;
+  }
+  
+  .services:hover .popover {
+      display: block;
+  }
+  
+  .services > .popover > li {
+      margin-left: -15px;
+  }
+  
+  .services > .popover > li > ul {
+      margin-left: -30px;
+  }
+  
+  .services > .popover > li > ul > li {
+      padding-bottom: 10px;
+      padding-left: 15px;
+  }

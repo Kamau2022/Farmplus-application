@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <title>Farmplus</title>
     <link rel="stylesheet" href="styles/0-farm.css">
-    <link rel="stylesheet" href="styles/3-header.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/farm-filters.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    
     <!-- jQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -16,6 +21,24 @@
       </header>
     <div class="container">
     <section class="filters">
+    <div class="products">
+        <h3>Farm Products</h3>
+        <ul class="popover">
+        <li>Organic Eggs</li>
+        <li>Organic Chickens</li>
+        <li>Kales</li>
+        <li>Apples</li>
+        </ul>
+        </div>
+        <div class="services">
+            <h3>Services</h3>
+            <ul class="popover">
+            <li>Veterinary services</li>
+            <li>Soil testing</li>
+            <li>Agronomy</li>
+                    </ul>
+            </ul>
+        </div>
     <div id ="bux">
         <span id="button1">Login</span>
         <form action="" id="form">
@@ -32,12 +55,15 @@
             <p><input type="text" placeholder="Your Email"/></p>
             <p><input type="text" placeholder="Your phone"/></p>
             <p><input type="text" placeholder="Your password"/></p>
+            <p><input type="submit" value="Sign up" /></p>
             </form>
     </div>
     </section>
-    </div>
-            
+    </div>           
    <script type="text/javascript" src="myscripts.js"></script>
+   <footer>
+    <div class="name">Copyright © 2023 Farmplus</div>
+</footer>
 </body>
 
 </html>
