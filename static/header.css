@@ -1,0 +1,17 @@
+header {
+    background-color: rgba(199, 199, 209, 0.842);
+    height: 50px;
+    width: 1195px;
+    border-bottom: 1px solid #CCCCCC;
+	padding: 0px 40px;
+}
+header .logo {
+	background: url("../images/logo.png") no-repeat;
+	width: 100px;
+	height: 90px;
+	position: relative;
+	top: 60%;
+	left: 0px;
+	transform: translateY(-72%);
+	margin-left: -35px;
+}
