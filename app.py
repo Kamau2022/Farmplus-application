@@ -15,16 +15,40 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 @app.route('/')
-def index():
+def home():
     return render_template('home.html')
 
-@app.route('/example')
-def example():
+@app.route('/login')
+def login_1():
     return render_template('login.html')
 
-@app.route('/redirect')
-def redirect_to_example():
-    return redirect('/example')
+@app.route('/direct')
+def redirect_to_login_1():
+    return redirect('/login')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/direct_1')
+def redirect_to_about():
+    return redirect('/about')
+
+@app.route('/product')
+def product():
+    return render_template('product.html')
+
+@app.route('/direct_2')
+def redirect_to_product():
+    return redirect('/product')
+
+@app.route('/service')
+def service():
+    return render_template('service.html')
+
+@app.route('/direct_3')
+def redirect_to_service():
+    return redirect('/service')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
