@@ -16,42 +16,52 @@ mycursor = mydb.cursor()
 
 @app.route('/')
 def home():
+    """a function that returns home page"""
     return render_template('home.html')
 
 @app.route('/login')
 def login_1():
+    """a function that returns login form"""
     return render_template('login.html')
 
 @app.route('/direct')
 def redirect_to_login_1():
+    """a function that redirects to the login form"""
     return redirect('/login')
 
 @app.route('/about')
 def about():
+    """a function that returns about page"""
     return render_template('about.html')
 
 @app.route('/direct_1')
 def redirect_to_about():
+    """a function that redirects to about page"""
     return redirect('/about')
 
 @app.route('/product')
 def product():
+    """a function that returns product page"""
     return render_template('product.html')
 
 @app.route('/direct_2')
 def redirect_to_product():
+    """a function that redirects to about page"""
     return redirect('/product')
 
 @app.route('/service')
 def service():
+    """a function that returns service page"""
     return render_template('service.html')
 
 @app.route('/direct_3')
 def redirect_to_service():
+    """a function that redirects to service page"""
     return redirect('/service')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """a function that returns login home"""
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -65,6 +75,7 @@ def login():
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
+    """a function that returns signup form"""
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -75,6 +86,7 @@ def signup():
 
 @app.route('/dashboard')
 def dashboard():
+    """a function that returns dashboard page"""
     return render_template('index.html')
 
 if __name__ == '__main__':
