@@ -1,4 +1,6 @@
 # FARMPLUS 
+![coverimage](https://user-images.githubusercontent.com/104911422/230400417-138a0019-15a7-48e5-8e2c-dcec34b5d209.png)
+
 ---
 ## Table of Contents
   - [Table of Contents](#table-of-contents)
