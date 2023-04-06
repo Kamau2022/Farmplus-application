@@ -1,5 +1,6 @@
 # FARMPLUS 
 ![coverimage](https://user-images.githubusercontent.com/104911422/230400417-138a0019-15a7-48e5-8e2c-dcec34b5d209.png)
+
 We are living in a time when lifestyle diseases have skyrocketed. This has led to an increase in demand for organic food which include vegetables and fruits. In an effort to help people access organic products, Farmplus was born.
 Farmplus is an e-commerce website that allows customers order quality organic food and enables farmers access services at afforfdable price
 
@@ -11,7 +12,6 @@ Farmplus is an e-commerce website that allows customers order quality organic fo
 
 ---
 ## Table of Contents
-  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Built With](#built-with)
   - [Deployment](#deployment)
