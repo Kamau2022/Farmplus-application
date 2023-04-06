@@ -17,7 +17,7 @@ Farmplus is an e-commerce website that allows customers order quality organic fo
 [LinkedIn - Benson Kamau](https://www.linkedin.com/pulse/farmplus-organic-benson-kamau/)
 [Blog - Farmplus](https://www.linkedin.com/pulse/farmplus-organic-benson-kamau/) 
 [Website](https://www.premiumsolutions.tech)
---- 
+
 ## Built With    
 * HTML and CSS - The frontend technologies
 * Python - The Backend Language
@@ -25,13 +25,13 @@ Farmplus is an e-commerce website that allows customers order quality organic fo
 * Flask - The Web Development Framework
 * SQLAlchemy - Python SQL Toolkit and Object Relational Mapper
 * MySQL - Relational Database Management System
----
+
 ## Deployment
 The website was deployed to ALX servers. We used uWsgi to deploy the project.
---- 
+ 
 ## Future
 Currently the system allows pay on delivery option only. In the future I intend to integrate various payment options into the website. Such asMpesa and credit cards payment methods.
----
+
 ## How to contribute
 We welcome any contribution geared towards making this project better.
 You can send me an email with clear suggestions on how to make this project better
