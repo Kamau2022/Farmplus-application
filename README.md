@@ -35,8 +35,8 @@ The website was deployed to ALX servers. We used uWsgi to deploy the project.
 Currently the system allows pay on delivery option only. In the future I intend to integrate various payment options into the website. Such asMpesa and credit cards payment methods.
 
 ## How to contribute
-We welcome any contribution geared towards making this project better.
-You can send me an email with clear suggestions on how to make this project better
+We welcome any contribution that would make this project better.
+You can send me an email with suggestions on how to on how to improve this project
 
 ## Authors 
 
