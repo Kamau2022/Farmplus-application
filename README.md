@@ -32,7 +32,7 @@ Farmplus is an e-commerce website that allows customers order quality organic fo
 The website was deployed to ALX servers. We used uWsgi to deploy the project.
  
 ## Future
-Currently the system allows pay on delivery option only. In the future I intend to integrate various payment options into the website. Such asMpesa and credit cards payment methods.
+Currently the system allows pay on delivery option only. In the future I intend to integrate various payment options into the website. Such as Mpesa and credit cards payment methods.
 
 ## How to contribute
 We welcome any contribution that would make this project better.
