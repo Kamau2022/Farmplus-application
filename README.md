@@ -36,7 +36,7 @@ Currently the system allows pay on delivery option only. In the future I intend 
 
 ## How to contribute
 We welcome any contribution that would make this project better.
-You can send me an email with suggestions on how to on how to improve this project
+You can send me an email with suggestions on how to improve this project
 
 ## Authors 
 
