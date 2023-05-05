@@ -81,13 +81,8 @@ def signup():
         password = request.form['password']
         mycursor.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
         mydb.commit()
-        return redirect(url_for('dashboard'))
+        return render_template('login.html')
     return render_template('signup.html')
-
-@app.route('/dashboard')
-def dashboard():
-    """a function that returns dashboard page"""
-    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
