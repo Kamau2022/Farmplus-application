@@ -22,7 +22,7 @@ def home():
 @app.route('/login')
 def login_1():
     """a function that returns login form"""
-    return render_template('login.html')
+    return render_template('index.html')
 
 @app.route('/direct')
 def redirect_to_login_1():
@@ -58,6 +58,21 @@ def service():
 def redirect_to_service():
     """a function that redirects to service page"""
     return redirect('/service')
+
+@app.route('/direct_4')
+def redirect_to_cart():
+    """a function that redirects to service page"""
+    return redirect('/cart')
+
+@app.route('/cart')
+def cart():
+    """a function that returns cart page"""
+    return render_template('cart.html')
+
+@app.route('/index')
+def index():
+    """a function that returns index page"""
+    return render_template('index.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
