@@ -56,7 +56,7 @@ const storeProductsData = [{
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing',
   img: 'static/images/carrot.png'
 }];
-
+  
 let label = document.getElementById('label')
 let StoringCart = document.getElementById('storing-cart')
 let basket = JSON.parse(localStorage.getItem('data')) || [];
@@ -71,7 +71,7 @@ const calculation = () => {
 calculation();
 
 let generateCartItems = () => {
-	if (basket.length >= 2){
+	if (basket.length !== 0){
 	 return(StoringCart.innerHTML = basket.map((x) => {
 		 let {id, item} = x;
 		 let search = storeProductsData.find((y)=>y.id === id) || []
@@ -143,7 +143,7 @@ let update = (id) => {
     calculation();
     TotalAmount();
 };
-const removeItem = (id) => {
+  const removeItem = (id) => {
   const selectedProduct = id;
   basket = basket.filter((x) => x.id !== selectedProduct.id);
   generateCartItems();
@@ -151,22 +151,23 @@ const removeItem = (id) => {
   calculation();
   localStorage.setItem('data', JSON.stringify(basket));
 };
+
 const TotalAmount = () => {
   if (basket.length !== 0) {
-    let amount = basket.map((x) => {
-     let {item, id } = x;
-     let search = storeProductsData.find((y)=>y.id === id) || []
-     return item * search.price
-  })
-   .reduce((x, y) => x + y, 0);
+    const amount = basket.map((x) => {
+      const { item, id } = x;
+      const search = storeProductsData.find((y) => y.id === id) || [];
+
+      return item * search.price;
+    })
+      .reduce((x, y) => x + y, 0);
     label.innerHTML = `
         <h2>Total Bill : Kes ${amount}</h2>
         <button class="checkout">Checkout</button>
         <button onclick="clearCart()" class="removeAll">Clear Cart</button>
         `;
   } else return;
-    
-    };
+};
 const clearCart = () => {
   basket = [];
   generateCartItems();
