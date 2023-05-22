@@ -22,7 +22,7 @@ def home():
 @app.route('/login')
 def login_1():
     """a function that returns login form"""
-    return render_template('index.html')
+    return render_template('login.html')
 
 @app.route('/direct')
 def redirect_to_login_1():
