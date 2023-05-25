@@ -88,12 +88,12 @@ input[type="submit"] {
 }
 .display{
   color: darkgreen;
-  margin-left: 100px;
+  margin-left: 1px;
   font-weight: 1000;
   margin-top: 250px;
 }
 .display-1{
-  margin-top: -220px;
+  margin-top: -100px;
   color: #fff;
   margin-left: 100px;
   font-weight: 1000;
@@ -109,12 +109,6 @@ input[type="submit"] {
   margin-top: 150px;
   margin-left: 300px;
   border-radius: 1px;
-}
-.container-2{
-  size: 150px;
-  background-color: whitesmoke;
-  height: 400px;
-  display: flex;
 }
 .header-content-right {
   padding-right:50px;
@@ -142,19 +136,25 @@ input[type="submit"] {
   height: 550px;
   background-color:rgb(42, 19, 143); 
   display: flex;
+  margin-top: 50px;
 }
 .display-3 > image{
-  height: 300px;
+  height: 150px;
+  margin-top: -100px;
 }
 .mb{
-  margin-left: 500px;
-  margin-top: -580px;
+  margin-left: 100px;
+  margin-top: -50px;
   line-height: 70%;
   
+}
+.mb-1{
+  line-height: 150%;
 }
 .text{
   font-size: x-large;
   color: darkgreen;
+  margin-top: 100px;
 }
 .row-1{
   line-height: 150%;
@@ -169,98 +169,16 @@ input[type="submit"] {
 .col-4 > h4{
   font-size: larger;
 }
-.container-5{
-  width: auto;
-  height: 570px;
-  background-color:whitesmoke;
-  display: flex;
-}
-.service-a{
-  margin-left: 10px;
-  margin-top: 100px;
-}
-.service-a > img{
-  width: 200px;
-  height: 200px;
-}
-.service-b{
-  margin-top: -550px;
-  margin-left: 500px;
-}
-.service-b > img{
-  width: 200px;
-  height: 200px;
-}
-.service-c{
-  margin-top: -265px;
-  margin-left: 1000px;
-}
-.service-c > img{
-  height: 200px;
-}
-.text-a{
-  font-size: x-large;
-}
-.display-a{
-  margin-top: -50px;
-}
-.text-a{
-  margin-top: 40px;
-  color: darkgreen;
-}
-.container-6{
-  height: 570px;
-  background-color:whitesmoke;
-  display: block;
-  margin-top: 50px;
-}
-.service_a{
-  margin-left: 10px;
-  margin-top: 180px;
-}
-.service_a > img{
-  width: 200px;
-  height: 200px;
-}
-.service_b{
-  margin-top: -540px;
-  margin-left: 500px;
-}
-.service_b > img{
-  width: 200px;
-  height: 200px;
-}
-.service_c{
-  margin-top: -265px;
-  margin-left: 1000px;
-}
-.service_c > img{
-  height: 200px;
-}
-.service_d{
-  margin-top: -20px;
-  margin-left: 1000px;
+.products-organic{
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
 
 }
-.service_d > img{
-  width: 200px;
-  height: 200px;
+.item{
+  border: 1px solid #6c757d;
+  border-radius: 4px;
 }
-.service_e{
-  margin-left: 500px;
-  margin-top: -240px;
-}
-.service_e > img{
-  height: 190px;
-  width: 200px;
-}
-.text_a{
-  font-size: x-large;
-}
-.display_a{
-  margin-top: -50px;
-}
-.text_a{
-  margin-top: -50px;
-  color: darkgreen;
-}
+
