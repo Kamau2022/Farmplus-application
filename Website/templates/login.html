@@ -1,3 +1,6 @@
+{% extends "base.html" %} 
+ {% block title %}Login{% endblock %}
+ {% block content %}
 <!DOCTYPE html>
         <!-- Login form for Farmplus application -->
         <html lang="en">
@@ -14,8 +17,12 @@
                <form action="/login" method="POST" id="form">
                        <div class="field username">
                         <div class="input-area">
-               <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
+               <label for="email">Email Address</label>
+                <input 
+		type="email" 
+		id="email" 
+		name="email"
+		placeholder="Enter email"/>
                 <i class="icon fas fa-user"></i>
                 <br>
                         </div>
@@ -23,7 +30,11 @@
                        <div class="field password">
                         <div class="input-area">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <input 
+		type="password" 
+		id="password1" 
+		name="password1"
+		placeholder="Enter password"/>
                 <i class="icon fas fa-lock"></i>
                 <br>
                 </div>
@@ -35,3 +46,4 @@
         </body>
 </html>
 
+{% endblock %}

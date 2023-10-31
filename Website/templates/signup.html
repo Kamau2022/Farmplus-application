@@ -1,0 +1,76 @@
+{% extends "base.html" %} 
+ {% block title %}signup{% endblock %}
+ {% block content %}
+<!DOCTYPE html>
+        <!-- Signup form for Farmplus application -->
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Login Form </title>
+          <link rel="stylesheet" href="/static/1-farm.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        </head>
+        <body>
+                <div class="wrapper">
+                <header>Signup</header>
+               <form action="/signup" method="POST" id="form">
+                       <div class="field email">
+                        <div class="input-area">
+               <label for="email">Email Address</label>
+                <input 
+		type="email" 
+		id="email" 
+		name="email"
+		placeholder="Enter email"/>
+                <i class="icon fas fa-user"></i>
+                <br>
+                        </div>
+                       </div>
+                      <div class="field password">
+                        <div class="input-area">
+                <label for="firstName">First Name</label>
+                <input 
+                type="text" 
+                id="firstName" 
+                name="firstName"
+                placeholder="Enter firstName">
+                <i class="icon fas fa-lock"></i>
+                <br>
+                </div>
+                       </div>
+                       
+
+                       <div class="field password">
+                        <div class="input-area">
+                <label for="password">Password</label>
+                <input 
+		type="password" 
+		id="password1" 
+		name="password1"
+		placeholder="Enter password">
+                <i class="icon fas fa-lock"></i>
+                <br>
+                </div>
+                       </div>
+		       <div class="field password">
+                        <div class="input-area">
+                <label for="password2">Password</label>
+                <input
+                type="password"
+                id="password2"
+                name="password2"
+                placeholder="confirm password">
+                <i class="icon fas fa-lock"></i>
+                <br>
+                </div>
+                       </div>
+
+                  <input type="submit" value="Signup">
+                </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+          </div>
+        </body>
+</html>
+
+{% endblock %}
